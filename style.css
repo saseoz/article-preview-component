@@ -1,0 +1,205 @@
+:root {
+    --clr-400: hsl(217, 19%, 35%);
+    --clr-300: hsl(214, 17%, 51%);
+    --clr-200: hsl(212, 23%, 69%);
+    --clr-100: hsl(210, 46%, 95%);
+}
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+}
+img {
+    max-width: 100%;
+}
+span {
+    display: block;
+}
+i, .share-btn-c, .social-icon {
+    cursor: pointer;
+}
+body {
+    font-family: "Manrope", sans-serif;
+    /* 500 700 */
+    font-size: 0.813rem;
+    background-color: var(--clr-100);
+
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    padding-inline: 1.5rem;
+}
+.flex {
+    display: flex;
+}
+.card {
+    background-color: white;
+    border-radius: .5rem;
+    position: relative;
+    max-width: 400px;
+    box-shadow: 0px 1px 25px rgba(0, 0, 0, 0.105);
+}
+/* drawer img */
+.img-container {
+    height: 220px; 
+    overflow: hidden;
+    border-radius: .5rem .5rem 0 0;
+}
+/* text */
+.content-container {
+    padding-top: 2.3rem;
+    padding-inline: 2rem;
+    padding-bottom: 1.25rem;
+}
+.title {
+    color: var(--clr-400);
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: .9em;
+}
+.descr {
+    color: var(--clr-300);
+    font-size: .83rem;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 1.4em;
+}
+/* profile */
+.profile-container {
+    justify-content: space-between;
+    align-items: center;   
+}
+.avatar-name-container {
+    gap: 1rem;
+}
+.avatar {
+    width: 40px;
+    border-radius: 50%;
+}
+.name {
+    color: var(--clr-400);
+    font-weight: 700;
+    margin-bottom: .3em;
+}
+.date {
+    color: var(--clr-200);
+}
+.share-btn-c {
+    background-color: var(--clr-100);
+    width: 32px;
+    text-align: center;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+}
+.share-icon-c {
+    color: var(--clr-300);
+}
+/* socials component */
+.socials__bar {
+    position: absolute;
+    background-color: var(--clr-400);
+    width: 100%;
+    height: 64px;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 2rem;
+    gap: 1rem;
+    border-radius:  0 0 .5rem .5rem;
+}
+.socials__icon-container {
+    gap: 1rem;
+    align-items: center;
+}
+.socials__share-text {
+    text-transform: uppercase;
+    font-size: .8rem;
+    color: hsla(210, 46%, 95%, 0.692);
+    letter-spacing: 6px;
+    font-weight: 200;
+}
+.social-icon {
+    width: 22px;
+}
+.social-share-btn {
+    background-color: var(--clr-300);
+}
+.share-icon--clr {
+    color: white;
+}
+/* hide-show */
+.hidden {
+    display: none;
+}
+@media (min-width: 750px) {
+    .card {
+        display: flex;
+        max-width: 730px;
+    }
+    /* img */
+    .img-container {
+        height: unset;
+        width: 82%;
+        background-image: url('images/drawers.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: .5rem 0rem  0 .5rem;
+    }
+    .img {
+        display: none;
+    }
+    /* text */
+    .content-container {
+        width: 100%;
+        padding-top: 2rem;
+        padding-inline: 2rem;
+        padding-bottom: 1.7rem;
+    }
+    .title {
+        font-size: 1.2rem;
+        margin-bottom: .55em;
+    }
+    /* socials component */
+    .socials-container {
+        position: absolute;
+        bottom: 28%;
+        right: -10.3%;
+        border-radius: .7rem;
+        width: 248px;
+
+        flex-direction: column;
+        align-items: center;
+    }
+    .socials__bar {
+        position: unset;
+        height: 55px;
+        bottom: unset;
+        right: unset;
+        border-radius: .5rem;
+        box-shadow: 0px 1px 25px rgba(0, 0, 0, 0.34);
+    }
+    .socials__triangle {
+        width: 0;
+        height: 0;
+        border-left: 12px solid transparent;
+        border-right: 12px solid transparent;
+        border-top: 12px solid var(--clr-400);
+    }
+   .social-share-btn-hide {
+        display: none;
+    }
+   .hidden {
+        display: none;
+    }
+    .share-bg {
+        background-color: var(--clr-300);
+    }
+    .share-clr {
+        color: white;
+    }
+}

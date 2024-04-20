@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Article preview component</title>
+
+  <link rel="stylesheet" href="style.css">
+  
+  <script src="https://kit.fontawesome.com/f9d73486fc.js" crossorigin="anonymous"></script>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+  <main class="card">
+
+    <div class="img-container">
+      <img src="images/drawers.jpg" alt="" class="img">
+    </div>
+
+    <div class="content-container">
+
+      <h1 class="title">Shift the overall look and feel by adding these wonderful 
+        touches to furniture in your home</h1>
+      <p class="descr">Ever been in a room and felt like something was missing? Perhaps 
+        it felt slightly bare and uninviting. I’ve got some simple tips 
+        to help you make any room feel complete.</p>
+      
+      <div class="profile-container flex">
+        <div class="avatar-name-container flex">
+          <div><img src="images/avatar-michelle.jpg" alt="" class="avatar"></div>
+          <div>
+            <span class="name">Michelle Appleton</span>
+            <time class="date">28 Jun 2020</time>
+          </div>
+        </div>
+        <div class="share-btn-c share-btn-desk flex">
+          <i class="share-icon-c share-icon-desk fa-solid fa-share"></i> 
+        </div>
+      </div>
+
+    </div>
+    <!-- socials component start -->
+    <div class="socials-container flex hidden">
+      <div class="socials__bar flex">
+        <div class="socials__icon-container flex">
+          <span class="socials__share-text">Share</span>
+          <div><img src="images/icon-facebook.svg" alt="" class="card__fb-icon social-icon"></div>
+          <div><img src="images/icon-twitter.svg" alt="" class="card__twitter-icon social-icon"></div>
+          <div><img src="images/icon-pinterest.svg" alt="" class="card__pinterest-icon social-icon"></div>
+        </div>
+          <div class="share-btn-c social-share-btn social-share-btn-hide flex">
+            <i class="share-icon--clr fa-solid fa-share"></i> 
+          </div>
+      </div>
+      <div class="socials__triangle"></div>
+    </div>
+    <!-- socials component end -->
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
